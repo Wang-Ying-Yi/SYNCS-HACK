@@ -20,7 +20,6 @@ def make_similar_colors_transparent(input_file, background_color, similarity_thr
     rgba.putdata(newData)
     new_file = input_file.replace("./formal", "")
     os.makedirs("test", exist_ok=True)
-    print(new_file)
     rgba.save(f"test/{new_file}", "PNG")
     img.close()
 
@@ -31,5 +30,5 @@ folder_path = "./formal"
 for filename in os.listdir(folder_path):
     file_path = os.path.join(folder_path, filename)
     background_color = (255, 255, 255)  # Replace with the approximate background color
-    color_similarity_threshold = 15  # Adjust this threshold based on your need
+    color_similarity_threshold = 16  # Adjust this threshold based on your need
     make_similar_colors_transparent(file_path, background_color, color_similarity_threshold)
