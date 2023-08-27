@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap");
+      * {
+        font-family: "Markazi Text", serif;
+      }
+      .move-down {
+        animation: moveDown 0.5s ease-in-out forwards;
+      }
+      .move-up {
+        animation: moveUp 0.5s ease-in-out forwards;
+      }
+      @keyframes moveDown {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(400%);
+          visibility: hidden;
+        }
+      }
+      @keyframes moveUp {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-100%);
+        }
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body style="background-color: #f6f6f6">
+    <div
+      id="splash-screen"
+      class="flex justify-center items-center h-screen fit-content"
+    >
+      <img
+        src="./static/mainLogo.png"
+        alt="IMAGE144514437145"
+        class="logo-image1445144371"
+      />
+    </div>
+    <div
+      id="signUp-screen"
+      class="flex justify-center items-center h-screen hidden"
+    >
+      <div class="signup-signup">
+        <div class="flex justify-center items-center">
+          <h1 class="text-3xl">Sign Up</h1>
+        </div>
+        <h3 class="text-xl mt-8">E-mail</h3>
+        <input
+          type="text"
+          class="w-72 h-12 rounded-lg bg-neutral-200 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+
+        <h3 class="text-xl mt-8">Password</h3>
+        <input
+          type="password"
+          class="w-72 h-12 rounded-lg bg-neutral-200 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+
+        <div class="flex justify-center items-center my-10">
+          <button
+            onclick=""
+            class="bg-black text-white px-4 py-2 rounded-lg w-72 h-15"
+          >
+            <h3 class="text-xl">Sign-up</h3>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#splash-screen").on("click", function () {
+          $(this).addClass("move-down");
+          $("#signUp-screen").removeClass("hidden").addClass("move-up");
+        });
+      });
+    </script>
+  </body>
+</html>
