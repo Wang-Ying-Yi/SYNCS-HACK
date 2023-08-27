@@ -44,7 +44,7 @@ function checkFileExtension(fileName, allowedExtensions) {
       .then(() => {
         removeBackground(
           outputPath,
-          outputPath.replace("./output_", "./output_bg_removed_")
+          outputPath.replace("./  output_", "./output_bg_removed_")
         );
       })
       .catch((err) => {

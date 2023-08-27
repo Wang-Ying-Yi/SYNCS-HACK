@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body style="background-color: #f6f6f6">
+    <div class="flex justify-center mt-6">
+      <div>
+        <img src="./sltpgLogo.png" class="mx-auto" alt="" />
+      </div>
+    </div>
+    <div class="flex items-center text-center mt-4 ml-0">
+      <img src="./menuIcon.png" width="30" height="30" />
+      <h2 class="m-0 ml-3 text-xl font-medium">Your Wardrobe</h2>
+    </div>
+    <br />
+    <div class="grid grid-cols-3 gap-4 p-4">
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+      >
+        <img
+          src="../static/test/7025206.jpg"
+          alt="Image 1"
+          class="w-full h-auto"
+        />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="../static/test/2.jpg" alt="Image 2" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="../static/test/4.jpg" alt="Image 3" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="../static/test/34.jpg" alt="Image 4" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="./test/88.jpg" alt="Image 5" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="./test/71.jpg" alt="Image 6" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="./test/7607320.jpg" alt="Image 7" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="./test/31.jpg" alt="Image 8" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="./test/83.jpg" alt="Image 9" class="w-full h-auto" />
+      </div>
+    </div>
+    <button
+      class="flex justify-center items-center bg-black text-white transition-colors duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black"
+      style="
+        padding: 10px 20px;
+        border-radius: 15px;
+        margin: 20px auto;
+        width: 70%;
+      "
+      href
+    >
+      Next
+    </button>
+    <script>
+      const button = document.querySelector("button");
+      button.addEventListener("click", () => {
+        button.classList.toggle("bg-white");
+        button.classList.toggle("text-black");
+        //button.classList.toggle("border-radius");
+        //  button.setAttribute("style", "border-radius: 15px;");
+        button.classList.toggle("border-4 border-black");
+      });
+      const tileElements = document.querySelectorAll("#tile");
+      var selectedClothesArray = [];
+      tileElements.forEach((tile) => {
+        tile.addEventListener("click", () => {
+          tile.classList.toggle("border-4");
+          tile.classList.toggle("border-black");
+          selectedClothesArray.push(tile.children);
+          console.log("ksfklsd");
+          console.log(tile.children[0]);
+        });
+      });
+      console.log("kldslkflkd");
+      console.log(selectedClothesArray);
+    </script>      const tileElements = document.querySelectorAll("#tile");
+      tileElements.forEach((tile) => {
+        tile.addEventListener("click", () => {
+          tile.classList.toggle("border-5");
+          tile.classList.toggle("border-black");
+        });
+      });      const tileElements = document.querySelectorAll("#tile");
+      tileElements.forEach((tile) => {
+        tile.addEventListener("click", () => {
+          tile.classList.toggle("border-5");
+          tile.classList.toggle("border-black");
+        });
+      })4      const tileElements = document.querySelectorAll("#tile");
+      tileElements.forEach((tile) => {
+        tile.addEventListener("click", () => {
+          tile.classList.toggle("border-5");
+          tile.classList.toggle("border-black");
+        });
+      });      const tileElements = document.querySelectorAll("#tile");
+      tileElements.forEach((tile) => {
+        tile.addEventListener("click", () => {
+          tile.classList.toggle("border-5");
+          tile.classList.toggle("border-black");
+        });
+      })4
+  </body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body style="background-color: #f6f6f6">
+    <div class="flex justify-center mt-6">
+      <div>
+        <img src="./sltpgLogo.png" class="mx-auto" alt="" />
+      </div>
+    </div>
+    <div class="flex items-center text-center mt-4 ml-0">
+      <img src="./menuIcon.png" width="30" height="30" />
+      <h2 class="m-0 ml-3 text-xl font-medium">Your Wardrobe</h2>
+    </div>
+    <br />
+    <div class="grid grid-cols-3 gap-4 p-4">
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden border border-gray-300 cursor-pointer"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img
+          src="../static/test/7025206.jpg"
+          alt="Image 1"
+          class="w-full h-auto"
+        />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden border border-gray-300 cursor-pointer"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="../static/test/2.jpg" alt="Image 2" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden border border-gray-300 cursor-pointer"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="../static/test/4.jpg" alt="Image 3" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="../static/test/2.jpg" alt="Image 2" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="../static/test/4.jpg" alt="Image 3" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="../static/test/34.jpg" alt="Image 4" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="./test/88.jpg" alt="Image 5" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="./test/71.jpg" alt="Image 6" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="./test/7607320.jpg" alt="Image 7" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="./test/31.jpg" alt="Image 8" class="w-full h-auto" />
+      </div>
+      <div
+        class="flex justify-center items-center bg-white rounded-lg overflow-hidden"
+        style="height: 100px; background-color: #d9d9d9"
+        id="tile"
+      >
+        <img src="./test/83.jpg" alt="Image 9" class="w-full h-auto" />
+      </div>
+    </div>
+    <button
+      class="flex justify-center items-center bg-black text-white transition-colors duration-300 ease-in-out hover:bg-white hover:text-black hover:border-black"
+      style="
+        padding: 10px 20px;
+        border-radius: 15px;
+        margin: 20px auto;
+        width: 70%;
+      "
+    >
+      Next
+    </button>
+    <script>
+      const tileElements = document.querySelectorAll("#tile");
+      tileElements.forEach((tile) => {
+        tile.addEventListener("click", () => {
+          tile.classList.toggle("border-5");
+          tile.classList.toggle("border-black");
+        });
+      });
+    </script>
+  </body>
+</html> -->
