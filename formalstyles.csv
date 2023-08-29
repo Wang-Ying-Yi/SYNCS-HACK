@@ -1,0 +1,31 @@
+id,gender,masterCategory,subCategory,articleType,baseColour,recommend
+2,Men,Apparel,Topwear,Jackets,Black,4128190
+5,Men,Apparel,Topwear,Jackets,Black,4128190
+8,Men,Apparel,Topwear,Jackets,Grey,4128190
+3,Men,Apparel,Topwear,Jackets,Navy,4128190
+1,Men,Apparel,Topwear,Jackets,Beige,4128190
+7,Men,Apparel,Topwear,Jackets,White,4128190
+9,Men,Apparel,Topwear,Jackets,SkyBlue,4128190
+4,Men,Apparel,Topwear,Jackets,White,4128190
+19,Men,Apparel,Topwear,Jackets,Red,4128190
+43,Men,Apparel,Topwear,Jackets,Blue,4128190
+4128190,Men,Apparel,Topwear,T-Shirts,Black,43
+37,Men,Apparel,Topwear,T-Shirts,Green,43
+61,Men,Apparel,Topwear,T-Shirts,White,43
+31,Men,Apparel,Topwear,T-Shirts,Navy,43
+23,Men,Apparel,Topwear,T-Shirts,Grey,43
+16,Men,Apparel,Topwear,T-Shirts,Blue,43
+44,Men,Apparel,Bottomwear,Track Pants,Navy,61
+65,Men,Apparel,Bottomwear,Track Pants,Beige,61
+96,Men,Apparel,Bottomwear,Track Pants,Blue,61
+71,Men,Apparel,Bottomwear,Track Pants,Black,61
+82,Women,Apparel,Bottomwear,Skirt,White,9131135
+57,Women,Apparel,Bottomwear,Skirt,Blue,9131135
+85,Women,Apparel,Bottomwear,Skirt,Black,9131135
+83,Women,Apparel,Bottomwear,Skirt,Red,9131135
+34,Women,Apparel,Bottomwear,Skirt,Pink,9131135
+2803097,Women,Apparel,Topwear,T-Shirts,Green,88
+9131135,Women,Apparel,Topwear,T-Shirts,White,88
+7025206,Women,Apparel,Topwear,T-Shirts,Purple,88
+9851455,Women,Apparel,Topwear,T-Shirts,Pink,88
+88,Women,Apparel,Bottomwear,Track Pants,SkyBlue,9131135
